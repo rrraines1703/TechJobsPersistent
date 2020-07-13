@@ -1,6 +1,14 @@
-﻿<h1>Employer: Name</h1>
+﻿@model TechJobsPersistent.ViewModels.AddEmployerViewModel
 
-<div>
-    <p>Name: name</p>
-    <p>Location: location</p>
-</div>
+<h1>@Model.Name</h1>
+
+<table class="table">
+    <tr>
+        <th>Name: </th>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <th>Location</th>
+        <td>@Model.Location</td>
+    </tr>
+</table>
